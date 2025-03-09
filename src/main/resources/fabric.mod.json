@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "collision",
+  "version": "${version}",
+  "name": "collision",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "unlicense",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "elito.collision.client.CollisionClient"
+    ],
+    "main": [
+      "elito.collision.Collision"
+    ]
+  },
+  "mixins": [
+    "collision.mixins.json",
+    {
+      "config": "collision.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
