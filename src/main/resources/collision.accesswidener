@@ -1,0 +1,4 @@
+accessWidener v2 named
+
+accessible method net/minecraft/server/command/ExecuteCommand addConditionArguments (Lcom/mojang/brigadier/tree/CommandNode;Lcom/mojang/brigadier/builder/LiteralArgumentBuilder;ZLnet/minecraft/command/CommandRegistryAccess;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+accessible method net/minecraft/server/command/ExecuteCommand addConditionLogic (Lcom/mojang/brigadier/tree/CommandNode;Lcom/mojang/brigadier/builder/LiteralArgumentBuilder;ZLnet/minecraft/command/Condition;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
