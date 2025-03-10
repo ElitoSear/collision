@@ -54,7 +54,7 @@ public class ExecuteCommandMixin {
         BlockState blockState = world.getBlockState(blockPos);
 
 
-        Box box = Box.of(new Vec3d(vec3d.getX(), vec3d.getY(), vec3d.getZ()), d, d, d);
+        Box box = Box.of(vec3d, d, d, d);
         return !blockState.isAir()
                 && VoxelShapes.matchesAnywhere(
                 blockState.getCollisionShape(world, blockPos).offset(vec3d.getX(), vec3d.getY(), vec3d.getZ()), VoxelShapes.cuboid(box), BooleanBiFunction.AND
